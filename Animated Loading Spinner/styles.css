@@ -16,28 +16,29 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 15px solid transparent;
+    border: solid 15px transparent;
+    border-top: solid 15px blue;
     mix-blend-mode: overlay;
 }
 
 .spinner-text {
-    animation: loading-opacity 3s ease-in-out infinite;
+    animation: loading-opacity 3s ease infinite;
     font-size: 2em;
 }
 
-.spinner-sector-blue {
-    animation: rotate 2s ease-out infinite;
-    border-top: 15px solid lightblue;
+.spinner-sector-red {
+    animation: rotate 1s ease infinite;
+    border-top: solid 15px coral;
 }
 
-.spinner-sector-red {
-    animation: rotate 2.5s ease-in infinite;
-    border-top: 15px solid lightcoral;
+.spinner-sector-blue {
+    animation: rotate 1.5s ease-in infinite;
+    border-top: solid 15px blue;
 }
 
 .spinner-sector-green {
-    animation: rotate 1.5s ease-in-out infinite;
-    border-top: 15px solid lightgreen;
+    animation: rotate 1s ease-out infinite;
+    border-top: solid 15px green;
 }
 
 @keyframes rotate {
@@ -49,10 +50,12 @@
     0%, 100% {
         opacity: 1;
     }
+
     25%, 75% {
-        opacity: .5;
+        opacity: 0.3;
     }
+
     50% {
-        opacity: .1;
+        opacity: 0.5;
     }
 }
