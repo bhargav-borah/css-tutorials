@@ -3,6 +3,7 @@
 }
 
 body {
+    /* Gives depth to the object as if it's 800px away */
     perspective: 800px;
 }
 
@@ -17,6 +18,7 @@ body {
 
 .btn:hover {
     transform: rotateX(-90deg) translateY(75px);
+    cursor: pointer;
 }
 
 .side {
@@ -32,14 +34,14 @@ body {
 }
 
 .default-side {
-    background-color: white;
-    border: 10px solid #069;
+    background-color: #fff;
+    border: solid 10px #069;
     color: #069;
     transform: translateZ(75px);
 }
 
 .hover-side {
-    color: white;
+    color: #fff;
     background-color: #069;
-    transform: rotateX(90deg) translateZ(75px);
+    transform: rotateX(90deg);
 }
